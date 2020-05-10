@@ -3,7 +3,7 @@
 if [ $# -eq 0 ]
   then
     echo "Specify whether the node is 'ue', 'enb', 'epc' or 'media'"
-    echo "Ex. ./startup ue"
+    echo "Ex. sudo ./startup ue"
     exit 1
 fi
 
@@ -23,6 +23,7 @@ cd $HOME
 
 # Install zeromq on the enb and ue  nodes
 if ["$1" == 'ue' || "$1" == 'enb']
+then
 	# libzmq
 	git clone https://github.com/zeromq/libzmq.git
 	cd libzmq
@@ -46,6 +47,7 @@ fi
 
 # Install srsLTE on all LTE nodes
 if ["$1" != "media"]
+then
 	# srsLTE
 	git clone https://github.com/mu1tiplex/srsLTE-anl.git
 	cd srsLTE

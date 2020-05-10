@@ -8,7 +8,11 @@ if [ $# -eq 0 ]
 fi
 
 # Get access to the internet
-wget -O - -q https://www.wall2.ilabt.iminds.be/enable-nat.sh | sudo bash
+#wget -O - -q https://www.wall2.ilabt.iminds.be/enable-nat.sh | sudo bash
+
+sudo route del default gw 10.2.15.254 ; sudo route add default gw 10.2.15.253
+sudo route add -net 10.11.0.0 netmask 255.255.0.0 gw 10.2.15.254
+sudo route add -net 10.2.32.0 netmask 255.255.240.0 gw 10.2.15.254
 
 sudo apt update
 
@@ -17,8 +21,6 @@ sudo apt-get install cmake libfftw3-dev libmbedtls-dev libboost-program-options-
 
 # Install zeromq on the enb and ue  nodes
 if ["$1" == 'ue' || "$1" == 'enb']
-	
-
 	# libzmq
 	git clone https://github.com/zeromq/libzmq.git
 	cd libzmq

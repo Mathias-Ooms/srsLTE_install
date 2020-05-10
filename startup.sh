@@ -3,7 +3,7 @@
 if [ $# -eq 0 ]
   then
     echo "Specify whether the node is 'ue', 'enb', 'epc' or 'media'"
-    echo "./startup ue"
+    echo "Ex. ./startup ue"
     exit 1
 fi
 
@@ -18,6 +18,8 @@ sudo apt update
 
 # Install required libraries
 sudo apt-get install cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
+
+cd $HOME
 
 # Install zeromq on the enb and ue  nodes
 if ["$1" == 'ue' || "$1" == 'enb']
@@ -40,8 +42,6 @@ if ["$1" == 'ue' || "$1" == 'enb']
 	sudo make install
 	sudo ldconfig
 	cd ../
-	;;
-	*)
 fi
 
 # Install srsLTE on all LTE nodes

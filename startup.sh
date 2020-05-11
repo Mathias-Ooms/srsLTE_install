@@ -61,7 +61,8 @@ then
 	cmake ../
 	make
 	sudo make install
-	sudo srslte_install_configs.sh
+	sudo ldconfig
+	sudo srslte_install_configs.sh user
 	cd ../../
 fi
 

@@ -1,0 +1,219 @@
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.000681       127.0.1.1             127.0.1.100           S1AP     116    S1SetupRequest
+
+Frame 5: 116 bytes on wire (928 bits), 116 bytes captured (928 bits)
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: May 11, 2020 18:44:09.521343000 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1589215449.521343000 seconds
+    [Time delta from previous captured frame: 0.000625000 seconds]
+    [Time delta from previous displayed frame: 0.000625000 seconds]
+    [Time since reference or first frame: 0.000681000 seconds]
+    Frame Number: 5
+    Frame Length: 116 bytes (928 bits)
+    Capture Length: 116 bytes (928 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ethertype:ip:sctp:s1ap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 772
+    Link-layer address length: 6
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Unused: 0000
+    Protocol: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 127.0.1.1, Dst: 127.0.1.100
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 100
+    Identification: 0x0001 (1)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: SCTP (132)
+    Header checksum: 0x39ae [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 127.0.1.1
+    Destination: 127.0.1.100
+Stream Control Transmission Protocol, Src Port: 53358 (53358), Dst Port: 36412 (36412)
+    Source port: 53358
+    Destination port: 36412
+    Verification tag: 0xebf68f8d
+    [Association index: 65535]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    DATA chunk(ordered, complete segment, TSN: 751927445, SID: 0, SSN: 0, PPID: 18, payload length: 49 bytes)
+        Chunk type: DATA (0)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x03
+            .... 0... = I-Bit: Possibly delay SACK
+            .... .0.. = U-Bit: Ordered delivery
+            .... ..1. = B-Bit: First segment
+            .... ...1 = E-Bit: Last segment
+        Chunk length: 65
+        Transmission sequence number: 751927445
+            [This chunk is acked in frame: 6]
+                [The RTT to SACK was: 0.000013000 seconds]
+        Stream identifier: 0x0000
+        Stream sequence number: 0
+        Payload protocol identifier: S1 Application Protocol (S1AP) (18)
+        Chunk padding: 000000
+S1 Application Protocol
+    S1AP-PDU: initiatingMessage (0)
+        initiatingMessage
+            procedureCode: id-S1Setup (17)
+            criticality: reject (0)
+            value
+                S1SetupRequest
+                    protocolIEs: 4 items
+                        Item 0: id-Global-ENB-ID
+                            ProtocolIE-Field
+                                id: id-Global-ENB-ID (59)
+                                criticality: reject (0)
+                                value
+                                    Global-ENB-ID
+                                        pLMNidentity: 00f110
+                                        Mobile Country Code (MCC): Unknown (1)
+                                        Mobile Network Code (MNC): Unknown (01)
+                                        eNB-ID: macroENB-ID (0)
+                                            macroENB-ID: 0019b0 [bit length 20, 4 LSB pad bits, 0000 0000  0001 1001  1011 .... decimal value 411]
+                        Item 1: id-eNBname
+                            ProtocolIE-Field
+                                id: id-eNBname (60)
+                                criticality: ignore (1)
+                                value
+                                    ENBname: srsenb01
+                        Item 2: id-SupportedTAs
+                            ProtocolIE-Field
+                                id: id-SupportedTAs (64)
+                                criticality: reject (0)
+                                value
+                                    SupportedTAs: 1 item
+                                        Item 0
+                                            SupportedTAs-Item
+                                                tAC: 7 (0x0007)
+                                                broadcastPLMNs: 1 item
+                                                    Item 0
+                                                        PLMNidentity: 00f110
+                                                        Mobile Country Code (MCC): Unknown (1)
+                                                        Mobile Network Code (MNC): Unknown (01)
+                        Item 3: id-DefaultPagingDRX
+                            ProtocolIE-Field
+                                id: id-DefaultPagingDRX (137)
+                                criticality: ignore (1)
+                                value
+                                    PagingDRX: v128 (2)
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.001692       127.0.1.100           127.0.1.1             S1AP     108    S1SetupResponse
+
+Frame 7: 108 bytes on wire (864 bits), 108 bytes captured (864 bits)
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: May 11, 2020 18:44:09.522354000 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1589215449.522354000 seconds
+    [Time delta from previous captured frame: 0.000998000 seconds]
+    [Time delta from previous displayed frame: 0.000998000 seconds]
+    [Time since reference or first frame: 0.001692000 seconds]
+    Frame Number: 7
+    Frame Length: 108 bytes (864 bits)
+    Capture Length: 108 bytes (864 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ethertype:ip:sctp:s1ap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 772
+    Link-layer address length: 6
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Unused: 0000
+    Protocol: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 127.0.1.100, Dst: 127.0.1.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 92
+    Identification: 0x0000 (0)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: SCTP (132)
+    Header checksum: 0x39b7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 127.0.1.100
+    Destination: 127.0.1.1
+Stream Control Transmission Protocol, Src Port: 36412 (36412), Dst Port: 53358 (53358)
+    Source port: 36412
+    Destination port: 53358
+    Verification tag: 0xa9bee361
+    [Association index: 65535]
+    Checksum: 0x00000000 [unverified]
+    [Checksum Status: Unverified]
+    DATA chunk(ordered, complete segment, TSN: 805188065, SID: 0, SSN: 0, PPID: 18, payload length: 41 bytes)
+        Chunk type: DATA (0)
+            0... .... = Bit: Stop processing of the packet
+            .0.. .... = Bit: Do not report
+        Chunk flags: 0x03
+            .... 0... = I-Bit: Possibly delay SACK
+            .... .0.. = U-Bit: Ordered delivery
+            .... ..1. = B-Bit: First segment
+            .... ...1 = E-Bit: Last segment
+        Chunk length: 57
+        Transmission sequence number: 805188065
+            [This chunk is acked in frame: 8]
+                [The RTT to SACK was: 0.000015000 seconds]
+        Stream identifier: 0x0000
+        Stream sequence number: 0
+        Payload protocol identifier: S1 Application Protocol (S1AP) (18)
+        Chunk padding: 000000
+S1 Application Protocol
+    S1AP-PDU: successfulOutcome (1)
+        successfulOutcome
+            procedureCode: id-S1Setup (17)
+            criticality: reject (0)
+            value
+                S1SetupResponse
+                    protocolIEs: 3 items
+                        Item 0: id-MMEname
+                            ProtocolIE-Field
+                                id: id-MMEname (61)
+                                criticality: ignore (1)
+                                value
+                                    MMEname: srsmme01
+                        Item 1: id-ServedGUMMEIs
+                            ProtocolIE-Field
+                                id: id-ServedGUMMEIs (105)
+                                criticality: reject (0)
+                                value
+                                    ServedGUMMEIs: 1 item
+                                        Item 0
+                                            ServedGUMMEIsItem
+                                                servedPLMNs: 1 item
+                                                    Item 0
+                                                        PLMNidentity: 00f110
+                                                        Mobile Country Code (MCC): Unknown (1)
+                                                        Mobile Network Code (MNC): Unknown (01)
+                                                servedGroupIDs: 1 item
+                                                    Item 0
+                                                        MME-Group-ID: 1 (0x0001)
+                                                servedMMECs: 1 item
+                                                    Item 0
+                                                        MME-Code: 26 (0x1a)
+                        Item 2: id-RelativeMMECapacity
+                            ProtocolIE-Field
+                                id: id-RelativeMMECapacity (87)
+                                criticality: ignore (1)
+                                value
+                                    RelativeMMECapacity: 255

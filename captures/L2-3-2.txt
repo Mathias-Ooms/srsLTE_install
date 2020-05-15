@@ -1,0 +1,121 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000                                                   S1AP     49     S1SetupRequest
+
+Frame 1: 49 bytes on wire (392 bits), 49 bytes captured (392 bits)
+    Encapsulation type: USER 3 (48)
+    Arrival Time: May 15, 2020 11:14:52.758581000 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1589534092.758581000 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 49 bytes (392 bits)
+    Capture Length: 49 bytes (392 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: user_dlt:s1ap]
+DLT: 150, Payload: s1ap (S1 Application Protocol)
+S1 Application Protocol
+    S1AP-PDU: initiatingMessage (0)
+        initiatingMessage
+            procedureCode: id-S1Setup (17)
+            criticality: reject (0)
+            value
+                S1SetupRequest
+                    protocolIEs: 4 items
+                        Item 0: id-Global-ENB-ID
+                            ProtocolIE-Field
+                                id: id-Global-ENB-ID (59)
+                                criticality: reject (0)
+                                value
+                                    Global-ENB-ID
+                                        pLMNidentity: 00f110
+                                        Mobile Country Code (MCC): Unknown (1)
+                                        Mobile Network Code (MNC): Unknown (01)
+                                        eNB-ID: macroENB-ID (0)
+                                            macroENB-ID: 0019b0 [bit length 20, 4 LSB pad bits, 0000 0000  0001 1001  1011 .... decimal value 411]
+                        Item 1: id-eNBname
+                            ProtocolIE-Field
+                                id: id-eNBname (60)
+                                criticality: ignore (1)
+                                value
+                                    ENBname: srsenb01
+                        Item 2: id-SupportedTAs
+                            ProtocolIE-Field
+                                id: id-SupportedTAs (64)
+                                criticality: reject (0)
+                                value
+                                    SupportedTAs: 1 item
+                                        Item 0
+                                            SupportedTAs-Item
+                                                tAC: 7 (0x0007)
+                                                broadcastPLMNs: 1 item
+                                                    Item 0
+                                                        PLMNidentity: 00f110
+                                                        Mobile Country Code (MCC): Unknown (1)
+                                                        Mobile Network Code (MNC): Unknown (01)
+                        Item 3: id-DefaultPagingDRX
+                            ProtocolIE-Field
+                                id: id-DefaultPagingDRX (137)
+                                criticality: ignore (1)
+                                value
+                                    PagingDRX: v128 (2)
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000789                                                   S1AP     41     S1SetupResponse
+
+Frame 2: 41 bytes on wire (328 bits), 41 bytes captured (328 bits)
+    Encapsulation type: USER 3 (48)
+    Arrival Time: May 15, 2020 11:14:52.759370000 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1589534092.759370000 seconds
+    [Time delta from previous captured frame: 0.000789000 seconds]
+    [Time delta from previous displayed frame: 0.000789000 seconds]
+    [Time since reference or first frame: 0.000789000 seconds]
+    Frame Number: 2
+    Frame Length: 41 bytes (328 bits)
+    Capture Length: 41 bytes (328 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: user_dlt:s1ap]
+DLT: 150, Payload: s1ap (S1 Application Protocol)
+S1 Application Protocol
+    S1AP-PDU: successfulOutcome (1)
+        successfulOutcome
+            procedureCode: id-S1Setup (17)
+            criticality: reject (0)
+            value
+                S1SetupResponse
+                    protocolIEs: 3 items
+                        Item 0: id-MMEname
+                            ProtocolIE-Field
+                                id: id-MMEname (61)
+                                criticality: ignore (1)
+                                value
+                                    MMEname: srsmme01
+                        Item 1: id-ServedGUMMEIs
+                            ProtocolIE-Field
+                                id: id-ServedGUMMEIs (105)
+                                criticality: reject (0)
+                                value
+                                    ServedGUMMEIs: 1 item
+                                        Item 0
+                                            ServedGUMMEIsItem
+                                                servedPLMNs: 1 item
+                                                    Item 0
+                                                        PLMNidentity: 00f110
+                                                        Mobile Country Code (MCC): Unknown (1)
+                                                        Mobile Network Code (MNC): Unknown (01)
+                                                servedGroupIDs: 1 item
+                                                    Item 0
+                                                        MME-Group-ID: 1 (0x0001)
+                                                servedMMECs: 1 item
+                                                    Item 0
+                                                        MME-Code: 26 (0x1a)
+                        Item 2: id-RelativeMMECapacity
+                            ProtocolIE-Field
+                                id: id-RelativeMMECapacity (87)
+                                criticality: ignore (1)
+                                value
+                                    RelativeMMECapacity: 255

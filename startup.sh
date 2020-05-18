@@ -17,6 +17,7 @@ sudo apt-get -y install cmake libfftw3-dev libmbedtls-dev libboost-program-optio
 sudo apt-get -y install libzmq3-dev
 sudo apt-get -y install libboost-system-dev libboost-test-dev libboost-thread-dev libqwt-dev libqt4-dev
 
+cd
 mkdir build_srslte
 cd build_srslte
 git clone https://github.com/srsLTE/srsGUI.git

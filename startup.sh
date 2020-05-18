@@ -45,5 +45,4 @@ cd
 cd build_srslte
 git clone https://github.com/Mathias-Ooms/srsLTE_install.git
 cd srsLTE_install
-sudo cp_conf.sh
-sudo 
+sudo ./cp_conf.sh

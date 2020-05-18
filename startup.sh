@@ -19,14 +19,14 @@ sudo apt-get -y install libboost-system-dev libboost-test-dev libboost-thread-de
 
 cd
 mkdir build_srslte
-cd build_srslte
-git clone https://github.com/srsLTE/srsGUI.git
-cd srsGUI
-mkdir build
-cd build
-cmake ../
-make
-sudo make install
+#cd build_srslte
+#git clone https://github.com/srsLTE/srsGUI.git
+#cd srsGUI
+#mkdir build
+#cd build
+#cmake ../
+#make
+#sudo make install
 
 cd
 cd build_srslte

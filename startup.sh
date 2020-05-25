@@ -6,11 +6,11 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 # Get access to the internet
-wget -O - -q https://www.wall2.ilabt.iminds.be/enable-nat.sh | sudo bash
+#wget -O - -q https://www.wall2.ilabt.iminds.be/enable-nat.sh | sudo bash
 
-sudo route del default gw 10.2.15.254 ; sudo route add default gw 10.2.15.253
-sudo route add -net 10.11.0.0 netmask 255.255.0.0 gw 10.2.15.254
-sudo route add -net 10.2.32.0 netmask 255.255.240.0 gw 10.2.15.254
+#sudo route del default gw 10.2.15.254 ; sudo route add default gw 10.2.15.253
+#sudo route add -net 10.11.0.0 netmask 255.255.0.0 gw 10.2.15.254
+#sudo route add -net 10.2.32.0 netmask 255.255.240.0 gw 10.2.15.254
 
 sudo apt-get -y update
 sudo apt-get -y install cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
